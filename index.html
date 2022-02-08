@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title> C84</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
+    <style> 
+        body {
+            background-position: center;
+            background-size: cover;
+            background-image: url("mars.gif");
+        } 
+        #meucanvas {
+            margin-top: 30px;
+            border-width: 10px;
+            background-color: white;
+            border-style: ridge;
+        }
+        h1, h4 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body onload="adicionar();">
+    <center>
+        <h1> Movendo o rover em marte</h1>
+        <canvas id="meucanvas" width="800" height="600"> </canvas>
+        <h4> 
+            <b class="text-danger"> Nota: </b> 
+            Se o rover não estiver vísivel, pressione qualquer tecla direcional.
+        </h4>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
